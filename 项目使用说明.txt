@@ -1,0 +1,43 @@
+A1026-MOOC在线学习系统 的设计与实现,前后端分离项目，系统包括学生用户和教师、管理员三种角色
+系统设计实现包括如下功能：用户（教师和学生）信息功能模块,课程信息功能模块,作业信息功能模块,评论信息功能模块,
+公告信息功能模块,课程分类信息功能模块,学习记录功能模块,
+管理员信息功能模块,试题题目功能模块,考试结果功能模块,课程任务信息功能模块等等。
+
+【特色功能】：学生在线考试，作业提交，学习情况统计，在线学习
+
+【系统测试账号】
+管理员 admin 123456
+学生  test 123456
+教师  王琪 123456
+后台技术： SSM框架和Springboot框架两个版本代码
+前端技术： vue 和 jsp两个版本
+数据库：   Mysql5.x/8.x版本都可以
+开发工具： Eclipse、idea、MyEclipse、NetBeans都可以运行
+jdk版本： jdk1.8+
+【如果不会运行，可以找我们远程帮助调试运行】
+数据库每个表都有详细注释
+代码也有详细注释（详细说明）
+
+获取源码请加扣扣 1516993194  或者  2551449109
+
+网站前端：http://localhost:8080/myproject/pc/index
+网站后台:http://localhost:8080/myproject/manage/login
+4.系统实现（基础代码，业务功能代码的编写）
+com   项目包结构说明
+└─module
+    ├─controller  控制层，负责请求的处理，数据库的操作调用
+    ├─mapper      数据库操作接口，sql文件在xml中的配置
+    ├─pojo        数据库对应实体类，用来和数据库表实现映射关系
+    └─util        java中常见工具类的存放
+
+
+包名功能说明
+com.code.controller  所有请求控制类  例如 UserinfoMapper 代表用户相关请求
+com.code.entity 数据库对应实体类
+com.code.mapper 所有mybatis plus框架操作数据库接口
+com.code.util   项目中常用工具类
+
+下面的文件是springboot框架配置文件
+application.properties   数据库配置 端口配置 项目名配置
+log4j.properties   框架日志配置文件
+banner.txt     springboot启动加载提示文件
